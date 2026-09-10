@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#063b68" />
+  <title>AutoSOS Student | Cứu hộ ô tô 24/7</title>
+  <meta name="description" content="Yêu cầu cứu hộ ô tô nhanh chóng, minh bạch chi phí." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">A+</span><span>AutoSOS <b>Student</b></span></a><nav><a href="#dich-vu">Dịch vụ</a><a href="#bang-gia">Bảng giá</a><a href="#quy-trinh">Quy trình</a></nav><button class="outline" data-open-form>Yêu cầu cứu hộ</button></header>
+  <main id="top">
+    <section class="hero"><div class="hero-copy"><p class="eyebrow">HỖ TRỢ KHẨN CẤP 24/7</p><h1>Gặp sự cố trên đường?<br><span>AutoSOS</span> sẵn sàng hỗ trợ.</h1><p class="lead">Gửi yêu cầu trong vài phút. Hệ thống báo giá trước khi điều phối kỹ thuật viên.</p><div class="hero-actions"><button class="primary" data-open-form>Gửi yêu cầu cứu hộ</button><a class="hotline" href="tel:0988686868">☎ 0988 686 868</a></div><div class="trust"><span>✓ Báo giá rõ ràng</span><span>✓ Kỹ thuật viên gần bạn</span><span>✓ Hỗ trợ sinh viên</span></div></div><div class="hero-card"><div class="pulse">SOS</div><p>Đội cứu hộ đang trực</p><strong>24 giờ · 7 ngày</strong><hr><small>Trụ sở điều phối</small><b>KTX Trường ĐHSPKT Hưng Yên</b></div></section>
+    <section class="map-block"><div><p class="eyebrow dark">ĐIỂM ĐIỀU PHỐI</p><h2>Kết nối cứu hộ gần vị trí của bạn</h2><p>Ký túc xá Trường Đại học Sư phạm Kỹ thuật Hưng Yên, thôn Yên Lịch, xã Việt Tiến, tỉnh Hưng Yên.</p></div><iframe title="Bản đồ trụ sở AutoSOS" src="https://www.google.com/maps?q=Ký+túc+xá+Trường+Đại+học+Sư+phạm+Kỹ+thuật+Hưng+Yên&output=embed" loading="lazy"></iframe></section>
+    <section id="dich-vu"><p class="eyebrow dark">DỊCH VỤ CỨU HỘ</p><h2>Chọn đúng sự cố xe đang gặp</h2><p class="section-intro">Giá hiển thị là mức khởi điểm. Báo giá cuối cùng được xác nhận trước khi điều phối.</p><div id="serviceGrid" class="service-grid"></div></section>
+    <section id="bang-gia" class="pricing"><p class="eyebrow">BẢNG GIÁ THAM KHẢO</p><h2>Chi phí minh bạch</h2><div id="priceTable" class="price-table"></div><p class="price-note">* Giá có thể thay đổi theo loại xe, vị trí và thời điểm hỗ trợ.</p></section>
+    <section id="quy-trinh"><p class="eyebrow dark">QUY TRÌNH HỖ TRỢ</p><h2>Ba bước để xe sớm trở lại hành trình</h2><div class="steps"><article><i>1</i><h3>Gửi yêu cầu</h3><p>Điền thông tin liên hệ, vị trí và sự cố xe.</p><button class="text-button" data-open-form>Gửi yêu cầu →</button></article><article><i>2</i><h3>Nhận báo giá</h3><p>Hệ thống tính giá dự kiến theo dịch vụ bạn chọn.</p></article><article><i>3</i><h3>Xác nhận điều phối</h3><p>Kỹ thuật viên Nguyễn Văn Quang liên hệ hỗ trợ.</p></article></div></section>
+    <section class="faq"><div><p class="eyebrow dark">CẦN HỖ TRỢ NGAY?</p><h2>Ưu tiên an toàn của bạn.</h2><p>Dừng xe tại nơi an toàn, bật đèn cảnh báo và gửi yêu cầu. Không tự xử lý khi có nguy cơ mất an toàn.</p></div><a class="primary" href="tel:0988686868">Gọi hotline 0988 686 868</a></section>
+  </main>
+  <footer><span>© 2026 AutoSOS Student</span><span>Hỗ trợ cứu hộ ô tô tại Hưng Yên</span></footer>
+  <dialog id="requestDialog"><form id="requestForm"><button class="close" type="button" data-close>×</button><p class="eyebrow dark">YÊU CẦU CỨU HỘ</p><h2>Thông tin của bạn</h2><p class="form-note">Thông tin sẽ được chuyển tới bộ phận điều phối AutoSOS Student.</p><label>Họ và tên<input name="name" required placeholder="Ví dụ: Nguyễn Văn A" /></label><label>Số điện thoại<input name="phone" required inputmode="tel" pattern="[0-9+ ]{9,15}" placeholder="Ví dụ: 0988 123 456" /></label><label>Vị trí hiện tại<textarea name="location" required placeholder="Nhập địa chỉ hoặc mốc gần nhất"></textarea></label><label>Dịch vụ cứu hộ<select name="service" id="serviceSelect" required></select></label><label>Ghi chú (nếu có)<textarea name="note" placeholder="Biển số xe, tình trạng cụ thể..."></textarea></label><button class="primary wide" type="submit">Gửi yêu cầu và nhận báo giá</button></form></dialog>
+  <dialog id="quoteDialog"><div class="quote"><button class="close" type="button" data-close>×</button><p class="eyebrow dark">BÁO GIÁ DỰ KIẾN</p><h2 id="quoteService"></h2><div class="quote-price" id="quotePrice"></div><dl><div><dt>Khách hàng</dt><dd id="quoteName"></dd></div><div><dt>Thời gian tiếp cận dự kiến</dt><dd>20–35 phút</dd></div><div><dt>Kỹ thuật viên dự kiến</dt><dd>Nguyễn Văn Quang · 0988 686 868</dd></div></dl><button class="primary wide" id="confirmQuote">Đồng ý — xác nhận điều phối</button></div></dialog>
+  <dialog id="successDialog"><div class="success"><div class="success-icon">✓</div><h2>Đã tiếp nhận yêu cầu</h2><p>Kỹ thuật viên <b>Nguyễn Văn Quang</b> sẽ liên hệ qua số điện thoại bạn đã cung cấp.</p><a class="primary wide" href="tel:0988686868">Gọi kỹ thuật viên</a><button class="text-button center" data-close>Đóng</button></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
